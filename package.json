@@ -1,0 +1,64 @@
+{
+  "name": "@openclaw/wecom",
+  "version": "1.0.0",
+  "description": "OpenClaw WeCom (企业微信) channel plugin - Send and receive messages via WeCom",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "channel",
+    "wecom",
+    "企业微信"
+  ],
+  "author": "张俊杰",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/openclaw-wecom.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48",
+    "zod": "^4.3.6",
+    "axios": "^1.6.0",
+    "crypto-js": "^4.2.0",
+    "xml2js": "^0.6.2"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2025.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "@types/crypto-js": "^4.2.0",
+    "@types/xml2js": "^0.4.14"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "channel": {
+      "id": "wecom",
+      "label": "WeCom",
+      "selectionLabel": "WeCom (企业微信)",
+      "docsPath": "/channels/wecom",
+      "docsLabel": "wecom",
+      "blurb": "企业微信消息通道，支持私聊和群聊",
+      "aliases": ["wecom"],
+      "order": 40,
+      "quickstartAllowFrom": true
+    },
+    "install": {
+      "npmSpec": "@openclaw/wecom",
+      "localPath": "openclaw-wecom",
+      "defaultChoice": "npm",
+      "gitUrl": "https://github.com/openclaw/openclaw-wecom.git"
+    }
+  }
+}
