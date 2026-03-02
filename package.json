@@ -1,6 +1,6 @@
 {
   "name": "@junjiezhang/openclaw-wecom-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenClaw WeCom (企业微信) channel plugin - Send and receive messages via WeCom",
   "type": "module",
   "main": "dist/index.js",
