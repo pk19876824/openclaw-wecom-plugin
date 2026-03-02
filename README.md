@@ -18,7 +18,7 @@
 ### 方式一：从 npm 安装（推荐）
 
 ```bash
-openclaw plugins install @openclaw/wecom
+openclaw plugins install @junjiezhang/openclaw-wecom-plugin
 ```
 
 ### 方式二：本地开发

@@ -1,5 +1,5 @@
 {
-  "name": "@openclaw/wecom",
+  "name": "@junjiezhang/openclaw-wecom-plugin",
   "version": "1.0.0",
   "description": "OpenClaw WeCom (企业微信) channel plugin - Send and receive messages via WeCom",
   "type": "module",
@@ -55,10 +55,10 @@
       "quickstartAllowFrom": true
     },
     "install": {
-      "npmSpec": "@openclaw/wecom",
-      "localPath": "openclaw-wecom",
+      "npmSpec": "@junjiezhang/openclaw-wecom-plugin",
+      "localPath": "openclaw-wecom-plugin",
       "defaultChoice": "npm",
-      "gitUrl": "https://github.com/openclaw/openclaw-wecom.git"
+      "gitUrl": "git+https://github.com/pk19876824/openclaw-wecom-plugin.git"
     }
   }
 }
