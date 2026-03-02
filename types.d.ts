@@ -13,7 +13,7 @@ declare module "openclaw/plugin-sdk" {
   export type PluginRuntime = any;
   
   export interface OpenClawPluginApi {
-    log: any;
+    logger: any;
     registerChannel: (config: any) => void;
     registerTool: (tool: any) => void;
     registerCommand: (command: any) => void;
