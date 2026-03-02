@@ -8,7 +8,7 @@ const plugin = {
   id: "wecom",
   name: "WeCom",
   description: "WeCom (企业微信) channel plugin for OpenClaw",
-  version: "1.0.1",
+  version: "1.0.2",
 
   register(api: OpenClawPluginApi) {
     setWeComRuntime(api.runtime);
