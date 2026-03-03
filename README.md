@@ -35,9 +35,6 @@ npm run build
 ```json
 {
   "plugins": {
-    "load": {
-      "paths": ["/path/to/openclaw-wecom"]
-    },
     "entries": {
       "wecom": { "enabled": true }
     }
